@@ -1,0 +1,60 @@
+---
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+ title="Contacto | MetalSima"
+ description="Ponte en contacto con MetalSima"
+>
+ <div class="stack gap-20">
+  <main class="wrapper stack gap-8">
+   <Hero
+    title="Contacto"
+    tagline="¿Listo para empezar tu proyecto? Ponte en contacto con nosotros."
+    align="start"
+   />
+   <section>
+    <h2 class="section-title">Información de Contacto</h2>
+    <div class="contact-info">
+     <p>
+      <strong>Correo Electrónico:</strong>
+      <a href="mailto:metalsima2006@gmail.com">metalsima2006@gmail.com</a>
+     </p>
+     <p>
+      <strong>Teléfono y WhatsApp:</strong>
+      <a href="https://wa.me/593993921676">+593993921676</a>
+     </p>
+    </div>
+   </section>
+  </main>
+  <ContactCTA />
+ </div>
+</BaseLayout>
+
+<style>
+ .section-title {
+  font-size: var(--text-2xl);
+  margin-bottom: 1rem;
+  color: var(--gray-0);
+ }
+
+ .contact-info {
+  font-size: var(--text-lg);
+  color: var(--gray-300);
+ }
+
+ .contact-info p {
+  margin-bottom: 0.5rem;
+ }
+
+ .contact-info a {
+  color: var(--accent-regular);
+  text-decoration: none;
+ }
+
+ .contact-info a:hover {
+  text-decoration: underline;
+ }
+</style>

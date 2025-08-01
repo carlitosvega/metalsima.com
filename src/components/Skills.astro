@@ -1,62 +1,103 @@
 ---
-import Icon from './Icon.astro';
+import Icon from "./Icon.astro";
 ---
 
 <section class="box skills">
-	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-	</div>
-	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Industry Leader</h2>
-		<p>Neque viverra justo nec ultrices dui. Est ultricies integer quis auctor elit.</p>
-	</div>
-	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Strategy-Minded</h2>
-		<p>Urna porttitor rhoncus dolor purus non enim praesent ornare.</p>
-	</div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="door" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Puertas Enrollables</h2>
+  <p>
+   Puertas enrollables automáticas o manuales, garantía de satisfacción, calidad
+   y durabilidad.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Puertas, portones y pasamanos metálicos</h2>
+  <p>
+   Puertas y portones metálicos de alta calidad, diseñados para brindar
+   seguridad y durabilidad.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Estanterías Metálicas</h2>
+  <p>
+   Estanterías metálicas de alta resistencia, ideales para optimizar el espacio
+   y organizar productos.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Sistema de Gas centralizado</h2>
+  <p>
+   Sistemas de gas centralizado de alta eficiencia, diseñados para optimizar el
+   consumo energético y mejorar la seguridad.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Mobiliario restaurantes</h2>
+  <p>
+   Mobiliario para restaurantes de alta calidad, diseñado para brindar comodidad
+   y estilo en acero inoxidable.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Pérgolas, techos, toldos y mobiliario de exterior</h2>
+  <p>
+   Mobiliario para exteriores de alta calidad, diseñado en metal para brindar
+   comodidad.
+  </p>
+ </div>
+ <div class="stack gap-2 lg:gap-4">
+  <Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+  <h2>Mantenimiento de Motores</h2>
+  <p>
+   Servicios de mantenimiento para motores de alta calidad, diseñados para
+   brindar eficiencia y durabilidad.
+  </p>
+ </div>
 </section>
 
 <style>
-	.box {
-		border: 1px solid var(--gray-800);
-		border-radius: 0.75rem;
-		padding: 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
+ .box {
+  border: 1px solid var(--gray-800);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  background-color: var(--gray-999_40);
+  box-shadow: var(--shadow-sm);
+ }
 
-	.skills {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-	}
+ .skills {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+ }
 
-	.skills h2 {
-		font-size: var(--text-lg);
-	}
+ .skills h2 {
+  font-size: var(--text-lg);
+ }
 
-	.skills p {
-		color: var(--gray-400);
-	}
+ .skills p {
+  color: var(--gray-400);
+ }
 
-	@media (min-width: 50em) {
-		.box {
-			border-radius: 1.5rem;
-			padding: 2.5rem;
-		}
+ @media (min-width: 50em) {
+  .box {
+   border-radius: 1.5rem;
+   padding: 2.5rem;
+  }
 
-		.skills {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 5rem;
-		}
+  .skills {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 5rem;
+  }
 
-		.skills h2 {
-			font-size: var(--text-2xl);
-		}
-	}
+  .skills h2 {
+   font-size: var(--text-2xl);
+  }
+ }
 </style>

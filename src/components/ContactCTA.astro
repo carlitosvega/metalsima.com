@@ -1,46 +1,79 @@
 ---
-import CallToAction from './CallToAction.astro';
-import Icon from './Icon.astro';
+import CallToAction from "./CallToAction.astro";
+import Icon from "./Icon.astro";
 ---
 
 <aside>
-	<h2>Interested in working together?</h2>
-	<CallToAction href="mailto:me@example.com">
-		Send Me a Message
-		<Icon icon="paper-plane-tilt" size="1.2em" />
-	</CallToAction>
+ <h3>Le interesa nuestros productos o servicios?</h3>
+    <p>
+    Aceptamos todas las tarjetas de crédito y débito, así como pagos en efectivo.
+    <br />
+    <!-- Imagen de métodos de pago  -->
+    <img
+     src="/assets/aceptamos-tarjetas.png"
+     alt="Metodos de pago aceptados: Visa, Mastercard, American Express, Diners Club, Discover"
+     width="300"
+     height="50"
+    />
+   </p>
+ <!-- Main contact information -->
+  <ul class="stack gap-4">
+   <li>
+    <strong>Correo Electrónico:</strong>
+    <a href="mailto:metalsima2006@gmail.com">metalsima2006@gmail.com</a>
+   </li>
+   <li>
+    <strong>WhatsApp:+593993921676</strong>
+    <CallToAction
+     href="https://api.whatsapp.com/send?phone=593993921676&text=%C2%A1Bienvenido%2Fo%20a%20METALICAS%20SIMA!%20%F0%9F%8F%AD%0A%0AD%C3%A9janos%20tus%20requerimientos%20junto%20con%20tus%20datos%20(nombre%2C%20empresa%2C%20o%2C%20negocio%2C%20correo%2C%20ciudad)%20%F0%9F%93%8B.%20Uno%20de%20nuestros%20asesores%20comerciales%20se%20comunicar%C3%A1%20a%20la%20brevedad%20posible%20%F0%9F%93%9E.%0A%0APor%20ahora%2C%20nuestras%20ventas%20son%20solo%20en%20Ecuador%20%F0%9F%87%AA%F0%9F%87%A8"
+    >
+     Envíenos un mensaje
+     <Icon icon="paper-plane-tilt" size="1.2em" />
+    </CallToAction>
+   </li>
+  </ul>
 </aside>
 
 <style>
-	aside {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: 3rem;
-		border-top: 1px solid var(--gray-800);
-		border-bottom: 1px solid var(--gray-800);
-		padding: 5rem 1.5rem;
-		background-color: var(--gray-999_40);
-		box-shadow: var(--shadow-sm);
-	}
+ aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border-top: 1px solid var(--gray-800);
+ </CallToAction>
+</aside>
 
-	h2 {
-		font-size: var(--text-xl);
-		text-align: center;
-		max-width: 15ch;
-	}
+<style>
+ aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  border-top: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--gray-800);
+  padding: 5rem 1.5rem;
+  background-color: var(--gray-999_40);
+  box-shadow: var(--shadow-sm);
+ }
 
-	@media (min-width: 50em) {
-		aside {
-			padding: 7.5rem;
-			flex-direction: row;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
+ h2 {
+  font-size: var(--text-xl);
+  text-align: center;
+  max-width: 15ch;
+ }
 
-		h2 {
-			font-size: var(--text-3xl);
-			text-align: left;
-		}
-	}
+ @media (min-width: 50em) {
+  aside {
+   padding: 7.5rem;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+  }
+
+  h2 {
+   font-size: var(--text-3xl);
+   text-align: left;
+  }
+ }
 </style>

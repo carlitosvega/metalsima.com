@@ -1,75 +1,96 @@
 ---
-import Icon from './Icon.astro';
+import Icon from "./Icon.astro";
 
 const currentYear = new Date().getFullYear();
 ---
 
 <footer>
-	<div class="group">
-		<p>
-			Designed & Developed in Portland with <a href="https://astro.build/">Astro</a>
-			<Icon icon="rocket-launch" size="1.2em" />
-		</p>
-		<p>&copy; {currentYear} Jeanine White</p>
-	</div>
-	<p class="socials">
-		<a href="https://twitter.com/me"> Twitter</a>
-		<a href="https://github.com/me"> GitHub</a>
-		<a href="https://codepen.io/me"> CodePen</a>
-	</p>
+ <div class="group">
+  <p>
+   Designed & Developed MegaSystems S.A.S <a
+    href="https://escaleradecifras.com/">MS</a
+   >
+   <Icon icon="rocket-launch" size="1.2em" />
+  </p>
+  <p>&copy; {currentYear} Industrias Metálicas SIMA</p>
+ </div>
+ <!--Add contact bar -->
+ <div class="group">
+  <p>
+   <a href="/trabajo/">Ver trabajos</a> |
+   <a href="/about/">Acerca de</a> |
+   <a href="/contacto/">Contacto</a>
+  </p>
+  <p>
+   <p class="socials">
+    <a href="https://youtube.com/@metalicassima2240"> Youtube</a>
+    <a href="https://instagram.com/@metalicassima2240"> Instalgram</a>
+   </p>
+  </p>
+  <a
+   href="https://api.whatsapp.com/send?phone=593993921676&text=%C2%A1Bienvenido%2Fo%20a%20METALICAS%20SIMA!%20%F0%9F%8F%AD%0A%0AD%C3%A9janos%20tus%20requerimientos%20junto%20con%20tus%20datos%20(nombre%2C%20empresa%2C%20o%2C%20negocio%2C%20correo%2C%20ciudad)%20%F0%9F%93%8B.%20Uno%20de%20nuestros%20asesores%20comerciales%20se%20comunicar%C3%A1%20a%20la%20brevedad%20posible%20%F0%9F%93%9E.%0A%0APor%20ahora%2C%20nuestras%20ventas%20son%20solo%20en%20Ecuador%20%F0%9F%87%AA%F0%9F%87%A8"
+   class="whatsapp-button"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact us on WhatsApp"
+  >
+   <Icon icon="whatsapp" size="2em" />
+  </a>
+
+  <style>
+   footer {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: auto;
+    padding: 3rem 2rem 3rem;
+    text-align: center;
+    color: var(--gray-400);
+    font-size: var(--text-sm);
+   }
+
+   footer a {
+    color: var(--gray-400);
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+   }
+
+   footer a:hover,
+   footer a:focus {
+    text-decoration-color: currentColor;
+   }
+
+   .group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+   }
+
+   .socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+   }
+
+   @media (min-width: 50em) {
+    footer {
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 2.5rem 5rem;
+    }
+
+    .group {
+     flex-direction: row;
+     gap: 1rem;
+     flex-wrap: wrap;
+    }
+
+    .socials {
+     justify-content: flex-end;
+    }
+   }
+  </style>
+ </div>
 </footer>
-<style>
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: 3rem;
-		margin-top: auto;
-		padding: 3rem 2rem 3rem;
-		text-align: center;
-		color: var(--gray-400);
-		font-size: var(--text-sm);
-	}
-
-	footer a {
-		color: var(--gray-400);
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	footer a:hover,
-	footer a:focus {
-		text-decoration-color: currentColor;
-	}
-
-	.group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-
-	.socials {
-		display: flex;
-		justify-content: center;
-		gap: 1rem;
-		flex-wrap: wrap;
-	}
-
-	@media (min-width: 50em) {
-		footer {
-			flex-direction: row;
-			justify-content: space-between;
-			padding: 2.5rem 5rem;
-		}
-
-		.group {
-			flex-direction: row;
-			gap: 1rem;
-			flex-wrap: wrap;
-		}
-
-		.socials {
-			justify-content: flex-end;
-		}
-	}
-</style>
